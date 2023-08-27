@@ -4,12 +4,19 @@
 This tutorial can be used by anyone who wants to learn about using Regex with matching emails and how to utilize it appriprately on JavaScript. I designed this tutorial to be more like an index type of structure. I know that I personally am able to study better when everything is aligned, almost like a key and value format but also including an example to be able to see a real-life problem. 
 
 ## Table of Contents
+
 -[User Story](#User-Story)
+
 -[Acceptance Criteria](#Acceptance-Criteria)
+
 -[Tutorial Screenshots](#Tutorial-Screenshots)
+
 -[Links](#Links)
+
 -[Future Development](#Future-Development)
+
 -[Credits](#Credits)
+
 -[Author](#Author)
 
 ## User Story
@@ -41,7 +48,7 @@ THEN I find a section about the author and a link to the author’s GitHub profi
 
 ## Links
 Github link: https://github.com/Allicris/Reg-Ex
-Deployed link: 
+Deployed link: https://allicris.github.io/Reg-Ex/
 
 ## Installation
 -Navigate to my repository: https://github.com/Allicris/Reg-Ex
