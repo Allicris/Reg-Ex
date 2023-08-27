@@ -62,3 +62,42 @@ Example: Al{3, } could specify this expression Allll or Alllll etc..
 __{x, y}__ &nbsp;&nbsp;&nbsp; Specifies an expression it its left at least x times but not more than y times. 
 <br>
 Example: Al{2, 2} could specify Allison or An{2,1}n could specify Annnn but not Annnnnn.
+
+### Groups and Ranges
+
+__( )__ &nbsp;&nbsp;&nbsp; Used to match everything that us in the bracket.
+<br>
+Example: A(ll) matches the string: 'All'.
+
+__{ }__ &nbsp;&nbsp;&nbsp; Used to match a particular number of occurrences that are in the curly brackets going to the left of the string. 
+<br>
+Example: All{3,2} would match the string 'Alllllll'.
+
+__[ ]__ &nbsp;&nbsp;&nbsp; Used to match any character from the range og characters that are in the string inside of the square brackets.
+<br>
+Example: Al[cef]n can match the following strings: 'Alcn', 'Alen', and 'Alfn.
+
+__[sol]__ &nbsp;&nbsp;&nbsp; Matches individual characters. 
+<br>
+Example: the [sol] would let you match with 's', 'o', and 'l'.
+
+__[sol][ce]__ &nbsp;&nbsp;&nbsp; matches a single character from the first bracket and then following it would match with either c or e to its left. 
+<br>
+Example: It could match to the following strings: 'sc', 'oc', 'lc', 'se', 'oe' and 'le'. 
+
+__(?: ...)__ &nbsp;&nbsp;&nbsp; Used to match a non-capturing group. 
+<br>
+Example: A(?:nt|pple) could match a string like 'Apple'.
+
+__[^.....]__ &nbsp;&nbsp;&nbsp; Matches a character that is not defined in the square bracket. 
+<br>
+Example: If you have Al[^sol] could be matched to a string like: 'Al'.
+
+__[a-z]__ &nbsp;&nbsp;&nbsp; Matches the range of letters in lowercase to a string. 
+<br>
+Example: Could match 'rainbow', 'zebra' or 'cookies'
+
+__[A-Z]__ &nbsp;&nbsp;&nbsp; does the same thing as the above but in uppercase.
+<br>
+Example: Could match 'RAINBOW', 'ZEBRA' OR 'COOKIES'.
+
