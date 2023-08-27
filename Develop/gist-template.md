@@ -101,3 +101,59 @@ __[A-Z]__ &nbsp;&nbsp;&nbsp; does the same thing as the above but in uppercase.
 <br>
 Example: Could match 'RAINBOW', 'ZEBRA' OR 'COOKIES'.
 
+__^[a-zA-z]__ &nbsp;&nbsp;&nbsp; When you have a range of letters side by side it could match either lowercase or uppercase
+<br>
+Example: It could match 'NewYork' or 'greenDay'.
+
+__[0-5] &nbsp;&nbsp;&nbsp; Matches a character within the range of the numbers indicated in the square brackets.
+<br>
+Example: Could match '12432' or '54234' 
+
+__[aeiou]__ &nbsp;&nbsp;&nbsp; This specific bracket only matches the lower case vowels. 
+
+__[AEIOU]__ &nbsp;&nbsp;&nbsp; This does the opposite from above and matches the uppercase vowels.
+
+__al[^1-5]__ &nbsp;&nbsp;&nbsp; Matches the numbers or characters that aren't in the square bracket.
+<br>
+Example: Cannot match strings that contain 2, 3, and 4.
+
+### Escape Characters or Character Classes
+
+__\s__ &nbsp;&nbsp;&nbsp; Used to match one white space character. 
+
+__\S__ &nbsp;&nbsp;&nbsp; Used to match one non-white space character.
+
+__\0__ &nbsp;&nbsp;&nbsp; Used to match a NULL character. 
+
+__\a__ &nbsp;&nbsp;&nbsp; Used to match an alarm or bell.
+
+__\d__ &nbsp;&nbsp;&nbsp; Used to match one decimal digit, which means from 0 to 9.
+
+__\D__ &nbsp;&nbsp;&nbsp; Used to match a non-decimal digit. 
+
+__\n__ &nbsp;&nbsp;&nbsp; Used to match a new line
+
+__\w__ &nbsp;&nbsp;&nbsp; Used to match the alphanumeric characters, [0-9a-zA-Z]. 
+
+__\W__ &nbsp;&nbsp;&nbsp; Used to match the non-word character.
+
+__\b__ &nbsp;&nbsp;&nbsp; Used to match a word boundary. 
+
+## Regular Expression Languages 
+
+Regular Expressions are used in Java, PHP, Python and JavaScript. Today we will explain how it can be incorporated in JavaScript code. 
+
+### Regex in Javascript
+
+It is very easy to use regular expressions in JavaScript code, the following two string methods provide a huge help:
+
+1. __search():__ This searches the regex in the string inside the brackets and returns the position where the match was found.
+<br>
+Example: Using the search() method: var string = 'apples', pattern = 'technical',
+var res = string.search(pattern), Returns the position of the string as well.
+
+2. __Replace():__ This method is used to return the string after the replacement of a matched character in a string. 
+<br>
+Example: Using the repalce() method: var string = 'Allison', var pattern = /Yes/;, var replace = 'No';, var res = string.replace(/Yes/,replace);. This replaces the original word with the string related to replace. It will give you the output of 'Do you like coffee? No'.
+
+
